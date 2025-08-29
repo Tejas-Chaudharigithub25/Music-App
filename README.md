@@ -34,8 +34,8 @@ Music-App/
 
 # Screenshots
 
-![Music Player Wev view](/images/1.png)  
-![Music Player Mobile Responsive](/images/2.png)
+![Music Player Wev view](./images/1.png)  
+![Music Player Mobile Responsive](./images/2.png)
 
 ---
 
