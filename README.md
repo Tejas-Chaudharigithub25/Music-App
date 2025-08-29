@@ -32,6 +32,13 @@ Music-App/
 
 ---
 
+# Screenshots
+
+![Music Player Wev view](images/1.png)  
+![Music Player Mobile Responsive](images/2.png)
+
+---
+
 ## ⚡ How to Run
 1. Clone or download the project  
    ```bash
