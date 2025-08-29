@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Music Player</title>
+</head>
+
+<body>
+    <script src="handle.js"></script>
+    <section>
+        <div class="row">
+            <div style='display:flex;flex-direction:column;'>
+            <script>
+                songData.map(item=>{
+                    document.write(`
+                    <div class="list-card">
+                        <div class="list-details">
+                            <div style='display:flex;'>
+                            <span style='margin:5px 10px 0px 0px;'>${item.id}.</span>
+                            <img width="30px" style="border-radius: 5px;" src="${item.poster}" alt="">
+                            </div>
+                            <p style="text-align: center;padding: 10px;">${item.name}</p>
+                            <button style="padding: 7px;width: 30px; border-radius: 15px;border: 0px; background: aqua; cursor: pointer;"onClick='handleSong(${item.id})'>></button>
+                        </div>
+                    </div>
+                    `);
+                })
+                </script>
+                </div>
+            
+            <div class="card">
+                <div class="card-body">
+                    <h1 style="text-align: center;padding: 10px;margin: 10px 0px 0px 0px;">Music App</h1>
+                    <div class="card-img">
+                        <img src="Posters/p2.jpg" alt="poster image">
+                    </div>
+                    <div class="details">
+                        <h4>Music Name</h4>
+                        <p><span>Singer : </span>music is feel</p>
+                    </div>
+                    <div class="card-foot">
+                        <div class="progress">
+                            <input type="range" class="range1" value="0" min="0" max="100" id="progress"
+                                onchange="handleProgress(this)">
+                        </div>
+                        <div class="controls">
+                            <button type="checkbox" class="control1 fa fa-backward"></button>
+                            <button type="checkbox" class="fa fa-play" style="font-size: 20px;" id="playBtn" onclick="handlePlay(this)"></button>
+                            <button type="checkbox" class="control1 fa fa-forward"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
